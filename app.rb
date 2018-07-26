@@ -17,4 +17,6 @@ class App < Sinatra::Base
     @phrase = params[:phrase].to_s
     "#{@phrase * @number}"
  end
+ 
+ get '/say/:word/'
 end
